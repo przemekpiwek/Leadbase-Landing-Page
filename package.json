@@ -1,16 +1,11 @@
 {
-  "name": "Applify",
+  "name": "Leadbaselanding",
   "version": "2.0",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-autoprefixer": "~0.2.20130806",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-watch": "~0.5.3"
+  "private": true,
+  "scripts": {
+    "start": "yarn && yarn live-server --entry-file=index.html"
   },
-  "dependencies": {
-    "coffeescript": "^2.1.0",
-    "grunt-sass": "^2.0.0",
-    "mime.json": "^1.0.16",
-    "node-sass": "^4.7.2"
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }
