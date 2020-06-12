@@ -59,6 +59,7 @@
  * 42. Api Docs
  * 43. Contact Page
  * 44. 404 Page
+ * 45. Carousel
  */
 /**
 * 01. Bootstrap 4.0.0
@@ -6927,7 +6928,14 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important;
 }
 
-/*** 02 :: Font Awesome* ----------------------------------------------------------------------- *** Homepage: http://fontawesome.io* Author: @davegandy* License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)*/
+/**
+* 02 :: Font Awesome
+* ----------------------------------------------------------------------- *
+*
+* Homepage: http://fontawesome.io
+* Author: @davegandy
+* License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+*/
 @font-face {
   font-family: 'FontAwesome';
   src: url("../icons/fontawesome-webfont.eot?v=4.7.0");
@@ -9756,7 +9764,15 @@ a.text-dark:focus, a.text-dark:hover {
   content: "";
 }
 
-/*** 04. Owl Carousel* ----------------------------------------------------------------------- *** Homepage: http://owlcarousel2.github.io/* Author: David Deutsch* Author URL: https://github.com/daviddeutsch* License - MIT License*/
+/**
+* 04. Owl Carousel
+* ----------------------------------------------------------------------- *
+*
+* Homepage: http://owlcarousel2.github.io/
+* Author: David Deutsch
+* Author URL: https://github.com/daviddeutsch
+* License - MIT License
+*/
 .owl-carousel {
   display: none;
   width: 100%;
@@ -9995,7 +10011,15 @@ a.text-dark:focus, a.text-dark:hover {
   background: #8089ff;
 }
 
-/*** 03. Simple Line Icons* ----------------------------------------------------------------------- *** Homepage: http://simplelineicons.com* Author: Sabbir Ahmed* Author URL: https://github.com/thesabbir* License - MIT License*/
+/**
+* 03. Simple Line Icons
+* ----------------------------------------------------------------------- *
+*
+* Homepage: http://simplelineicons.com
+* Author: Sabbir Ahmed
+* Author URL: https://github.com/thesabbir
+* License - MIT License
+*/
 @font-face {
   font-family: "simple-line-icons";
   src: url("../icons/Simple-Line-Icons.eot?v=2.4.0");
@@ -10004,7 +10028,7 @@ a.text-dark:focus, a.text-dark:hover {
   font-style: normal;
 }
 
-.icon-user, .icon-people, .icon-user-female, .icon-user-follow, .icon-user-following, .icon-user-unfollow, .icon-login, .icon-logout, .icon-emotsmile, .icon-phone, .icon-call-end, .icon-call-in, .icon-call-out, .icon-map, .icon-location-pin, .icon-direction, .icon-directions, .icon-compass, .icon-layers, .icon-menu, .icon-list, .icon-options-vertical, .icon-options, .icon-arrow-down, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-up-circle, .icon-arrow-left-circle, .icon-arrow-right-circle, .icon-arrow-down-circle, .icon-check, .icon-clock, .icon-plus, .icon-minus, .icon-close, .icon-event, .icon-exclamation, .icon-organization, .icon-trophy, .icon-screen-smartphone, .icon-screen-desktop, .icon-plane, .icon-notebook, .icon-mustache, .icon-mouse, .icon-magnet, .icon-energy, .icon-disc, .icon-cursor, .icon-cursor-move, .icon-crop, .icon-chemistry, .icon-speedometer, .icon-shield, .icon-screen-tablet, .icon-magic-wand, .icon-hourglass, .icon-graduation, .icon-ghost, .icon-game-controller, .icon-fire, .icon-eyeglass, .icon-envelope-open, .icon-envelope-letter, .icon-bell, .icon-badge, .icon-anchor, .icon-wallet, .icon-vector, .icon-speech, .icon-puzzle, .icon-printer, .icon-present, .icon-playlist, .icon-pin, .icon-picture, .icon-handbag, .icon-globe-alt, .icon-globe, .icon-folder-alt, .icon-folder, .icon-film, .icon-feed, .icon-drop, .icon-drawer, .icon-docs, .icon-doc, .icon-diamond, .icon-cup, .icon-calculator, .icon-bubbles, .icon-briefcase, .icon-book-open, .icon-basket-loaded, .icon-basket, .icon-bag, .icon-action-undo, .icon-action-redo, .icon-wrench, .icon-umbrella, .icon-trash, .icon-tag, .icon-support, .icon-frame, .icon-size-fullscreen, .icon-size-actual, .icon-shuffle, .icon-share-alt, .icon-share, .icon-rocket, .icon-question, .icon-pie-chart, .icon-pencil, .icon-note, .icon-loop, .icon-home, .icon-grid, .icon-graph, .icon-microphone, .icon-music-tone-alt, .icon-music-tone, .icon-earphones-alt, .icon-earphones, .icon-equalizer, .icon-like, .icon-dislike, .icon-control-start, .icon-control-rewind, .icon-control-play, .icon-control-pause, .icon-control-forward, .icon-control-end, .icon-volume-1, .icon-volume-2, .icon-volume-off, .icon-calendar, .icon-bulb, .icon-chart, .icon-ban, .icon-bubble, .icon-camrecorder, .icon-camera, .icon-cloud-download, .icon-cloud-upload, .icon-envelope, .icon-eye, .icon-flag, .icon-heart, .icon-info, .icon-key, .icon-link, .icon-lock, .icon-lock-open, .icon-magnifier, .icon-magnifier-add, .icon-magnifier-remove, .icon-paper-clip, .icon-paper-plane, .icon-power, .icon-refresh, .icon-reload, .icon-settings, .icon-star, .icon-symbol-female, .icon-symbol-male, .icon-target, .icon-credit-card, .icon-paypal, .icon-social-tumblr, .icon-social-twitter, .icon-social-facebook, .icon-social-instagram, .icon-social-linkedin, .icon-social-pinterest, .icon-social-github, .icon-social-google, .icon-social-reddit, .icon-social-skype, .icon-social-dribbble, .icon-social-behance, .icon-social-foursqare, .icon-social-soundcloud, .icon-social-spotify, .icon-social-stumbleupon, .icon-social-youtube, .icon-social-dropbox, .icon-social-vkontakte, .icon-social-steam {
+.icon-user, .icon-people, .icon-user-female, .icon-user-follow, .icon-user-following, .icon-user-unfollow, .icon-login, .icon-logout, .icon-emotsmile, .icon-phone, .icon-call-end, .icon-call-in, .icon-call-out, .icon-map, .icon-location-pin, .icon-direction, .icon-directions, .icon-compass, .icon-layers, .icon-menu, .icon-list, .icon-options-vertical, .icon-options, .icon-arrow-down, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-up-circle, .icon-arrow-left-circle, .icon-arrow-right-circle, .icon-arrow-down-circle, .icon-check, .icon-clock, .icon-plus, .icon-minus, .icon-close, .icon-event, .icon-exclamation, .icon-organization, .icon-gauge, .icon-screen-smartphone, .icon-screen-desktop, .icon-plane, .icon-notebook, .icon-mustache, .icon-mouse, .icon-magnet, .icon-energy, .icon-disc, .icon-cursor, .icon-cursor-move, .icon-crop, .icon-chemistry, .icon-speedometer, .icon-shield, .icon-screen-tablet, .icon-magic-wand, .icon-hourglass, .icon-graduation, .icon-graph, .icon-game-controller, .icon-fire, .icon-eyeglass, .icon-envelope-open, .icon-envelope-letter, .icon-bell, .icon-badge, .icon-anchor, .icon-wallet, .icon-vector, .icon-speech, .icon-puzzle, .icon-printer, .icon-present, .icon-playlist, .icon-pin, .icon-picture, .icon-handbag, .icon-globe-alt, .icon-globe, .icon-folder-alt, .icon-folder, .icon-film, .icon-feed, .icon-drop, .icon-drawer, .icon-docs, .icon-doc, .icon-diamond, .icon-cup, .icon-calculator, .icon-bubbles, .icon-briefcase, .icon-book-open, .icon-basket-loaded, .icon-basket, .icon-bag, .icon-action-undo, .icon-action-redo, .icon-wrench, .icon-umbrella, .icon-trash, .icon-tag, .icon-support, .icon-frame, .icon-size-fullscreen, .icon-size-actual, .icon-shuffle, .icon-share-alt, .icon-share, .icon-arrow, .icon-question, .icon-pie-chart, .icon-pencil, .icon-note, .icon-loop, .icon-home, .icon-grid, .icon-graph, .icon-microphone, .icon-music-tone-alt, .icon-music-tone, .icon-earphones-alt, .icon-earphones, .icon-equalizer, .icon-like, .icon-dislike, .icon-control-start, .icon-control-rewind, .icon-control-play, .icon-control-pause, .icon-control-forward, .icon-control-end, .icon-volume-1, .icon-volume-2, .icon-volume-off, .icon-calendar, .icon-bulb, .icon-chart, .icon-ban, .icon-bubble, .icon-camrecorder, .icon-camera, .icon-cloud-download, .icon-cloud-upload, .icon-envelope, .icon-eye, .icon-flag, .icon-heart, .icon-info, .icon-key, .icon-link, .icon-lock, .icon-lock-open, .icon-magnifier, .icon-magnifier-add, .icon-magnifier-remove, .icon-paper-clip, .icon-paper-plane, .icon-power, .icon-refresh, .icon-reload, .icon-settings, .icon-star, .icon-symbol-female, .icon-symbol-male, .icon-target, .icon-credit-card, .icon-paypal, .icon-social-tumblr, .icon-social-twitter, .icon-social-facebook, .icon-social-instagram, .icon-social-linkedin, .icon-social-pinterest, .icon-social-github, .icon-social-google, .icon-social-reddit, .icon-social-skype, .icon-social-dribbble, .icon-social-behance, .icon-social-foursqare, .icon-social-soundcloud, .icon-social-spotify, .icon-social-stumbleupon, .icon-social-youtube, .icon-social-dropbox, .icon-social-vkontakte, .icon-social-steam {
   display: inline-block;
   font-family: "simple-line-icons";
   speak: none;
@@ -10173,8 +10197,10 @@ a.text-dark:focus, a.text-dark:hover {
   content: "\e616";
 }
 
-.icon-trophy:before {
-  content: "\e006";
+.icon-gauge:before {
+  position: relative;
+  top:8%;
+  content: url(/assets/icons/valueprop-initial-white.svg);
 }
 
 .icon-screen-smartphone:before {
@@ -10253,7 +10279,7 @@ a.text-dark:focus, a.text-dark:hover {
   content: "\e019";
 }
 
-.icon-ghost:before {
+.icon-graph:before {
   content: "\e01a";
 }
 
@@ -10457,8 +10483,10 @@ a.text-dark:focus, a.text-dark:hover {
   content: "\e05b";
 }
 
-.icon-rocket:before {
-  content: "\e05c";
+.icon-arrow:before {
+  position: relative;
+  top:5%;
+  content: url(/assets/icons/valueprop3-initial-white.svg);
 }
 
 .icon-question:before {
@@ -10490,7 +10518,9 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .icon-graph:before {
-  content: "\e06b";
+  position: relative;
+  top:15%;
+  content: url(/assets/icons/valueprop4-initial-white.svg);
 }
 
 .icon-microphone:before {
@@ -10773,7 +10803,14 @@ a.text-dark:focus, a.text-dark:hover {
   content: "\e620";
 }
 
-/*** 05. SliderPro* ----------------------------------------------------------------------- *** Homepage: http://bqworks.com/slider-pro/* Author: bqworks* Author URL: http://bqworks.com/*/
+/**
+* 05. SliderPro
+* ----------------------------------------------------------------------- *
+*
+* Homepage: http://bqworks.com/slider-pro/
+* Author: bqworks
+* Author URL: http://bqworks.com/
+*/
 .slider-pro {
   position: relative;
   margin: 0 auto;
@@ -13489,6 +13526,10 @@ img.img-responsive {
   box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 1px rgba(0, 0, 0, 0.075);
 }
 
+.shadow-xl-purple{
+  box-shadow: 0 5px 20px 0 rgba(0, 9, 105, 0.11);
+}
+
 .shadow-xl {
   box-shadow: 0 7px 15px rgba(0, 9, 128, 0.05), 0 12px 28px rgba(0, 9, 128, 0.075);
 }
@@ -14325,7 +14366,7 @@ body[data-fade_in="on-load"],
 }
 
 .ui-footer .footer-about img {
-  height: 40px;
+  height: 50px;
   width: auto;
   margin-bottom: .15rem;
 }
@@ -18166,3 +18207,249 @@ body.coming-soon .ui-counter > div .label {
   font-size: 3.6rem;
   margin: 2rem 0;
 }
+
+
+/**
+* 45. Carousel
+* ----------------------------------------------------------------------- *
+*/
+
+.carousel{
+  padding: 0 8vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 0px) and (max-width: 767px){
+  .carousel{
+    padding: 0 4vw;
+  }
+}
+@media screen and (min-width: 84.875rem){
+  .carousel{
+    max-width: 76.875rem;
+    padding: 0;
+  }
+}
+.carousel__track-container{
+height: 100%;
+width: 100%;
+/* overflow: hidden; */
+margin: 0 auto;
+position: relative;
+z-index: 1;
+display: block;
+}
+.carousel__track{
+  position: relative;
+  height: 100%; 
+  padding: 0;
+  transition: transform 250ms ease-in; 
+  touch-action: none;
+  list-style:none;
+  z-index: 1;
+  display:flex;
+  width: 100%;
+  box-sizing: content-box;
+  position:relative;
+  left: 0;
+}
+
+.carousel__slide{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel__card{
+  background: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 420ms cubic-bezier(.165,.84,.44,1);
+  transition-property: transform;
+  transition-duration: 420ms;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-delay: 0s;
+
+  /* new */
+  max-width:289px;
+  display:flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  break-inside: avoid;
+}
+@media screen and (min-width: 510px){
+  .carousel__card{
+    max-width: 1020px;
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+.carousel__button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex: 0;
+  width: 27px;
+  height: 44px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 44px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media (min-width: 850px) {
+.carousel__button{
+  display: block;
+}
+}
+.carousel__left{
+  background-image: url(/assets/icons/baseline-keyboard_arrow_left-24px.png);
+  left: -100px;
+
+}
+.carousel__right{
+  background-image: url(/assets/icons/baseline-keyboard_arrow_right-24px.png);
+  right: -100px;
+}
+.carousel__button img{
+  width: 24px;
+}
+
+.carousel__nav{
+  display:flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel__indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #C4C4C4;
+  margin: 0 12px;
+  cursor: pointer;
+}
+.carousel__indicator.current-slide{
+  background: #8089ff;
+}
+.carousel__card:hover{
+  box-shadow:0 1rem 2rem rgba(0, 9, 105, 0.11);
+  transform:scale(1.05)
+}
+.testimonial-container{
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  user-select: none;
+}
+.testimonial-id{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-picture{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.name{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.overflow-visible{
+  overflow: visible !important;
+}
+.customer-quote{
+  font-weight: 400;
+  line-height: 1.55555556;
+  letter-spacing: .3px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-align: left;
+}
+@media screen and (min-width: 25rem){
+  .testimonial-card .customer-quote{
+    font-size: calc(1rem + (2 * (100vw - 400px)/ 624));
+  }
+}
+.customer-name{
+  font-weight: 700;
+  line-height: 1.28571429;
+  letter-spacing: normal;
+  font-size: .875rem;
+  margin-bottom: 0;
+  display: block;
+  text-align: left;
+}
+@media screen and (min-width: 25rem){
+  .customer-name{
+    font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
+  }
+}
+.customer-title{
+  font-weight: 400;
+    line-height: 1.28571429;
+    letter-spacing: normal;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+@media screen and (min-width: 25rem){
+  .customer-title{
+    font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
+  }
+}
+
+/* #slider figure{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+
+/* @keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+} */
