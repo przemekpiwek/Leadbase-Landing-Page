@@ -791,209 +791,31 @@
     );
   });
 
-  //<-----------CAROUSEL JS----------->
+  //  <------- Swiper Carousel Initialization ------->
 
-  const track = document.querySelector(".carousel__track");
-  const slides = Array.from(track.children);
-  const nextButton = document.querySelector(".carousel__right");
-  const prevButton = document.querySelector(".carousel__left");
-  const dotsNav = document.querySelector(".carousel__nav");
-  const dots = Array.from(dotsNav.children);
-  const slideWidth = slides[0].getBoundingClientRect().width;
-  const MARGINBETWEENCARDS = 500;
-  track.dataset["position"] = 0;
-
-  // arrange slide margins
-  const setSlidePosition = (slide, index) => {
-    slide.style["margin-right"] = `${MARGINBETWEENCARDS}px`;
-  };
-  slides.forEach(setSlidePosition);
-
-  const moveToSlide = (track, currentSlide, targetSlide) => {
-    let moveDistance =
-      (targetSlide.dataset["slide"] - currentSlide.dataset["slide"]) *
-      (slideWidth + MARGINBETWEENCARDS);
-
-    track.dataset["position"] =
-      parseFloat(track.dataset["position"]) + moveDistance;
-
-    track.style.transform =
-      "translateX(-" + track.dataset["position"] + "px" + ")";
-    currentSlide.classList.remove("current-slide");
-    targetSlide.classList.add("current-slide");
-  };
-
-  const updateDots = (currentDot, targetDot) => {
-    currentDot.classList.remove("current-slide");
-    targetDot.classList.add("current-slide");
-  };
-
-  // when I click left, move slides to left
-  prevButton.addEventListener("click", (e) => {
-    const currentSlide = track.querySelector(".current-slide");
-    const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector(".current-slide");
-    const prevDot = currentDot.previousElementSibling;
-    const firstSlide = track.querySelector(".first-slide");
-    const lastSlide = track.querySelector(".last-slide");
-
-    if (currentSlide === firstSlide) {
-      moveToSlide(track, currentSlide, lastSlide);
-      updateDots(currentDot, firstDot);
-    } else {
-      moveToSlide(track, currentSlide, prevSlide);
-      updateDots(currentDot, prevDot);
-    }
+  var swiper = new Swiper(".swiper-container", {
+    speed: 400,
+    spaceBetween: 1200,
+    loop: true,
+    scrollbarHide: true,
+    touchMoveStopPropagation: true,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    controlBy: "slide",
+    paginationHiddenClass: "swiper-pagination-hidden",
+    a11y: true,
+    prevSlideMessage: "Previous slide",
+    nextSlideMessage: "Next slide",
+    firstSlideMessage: "This is the first slide",
+    lastSlideMessage: "This is the last slide",
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-new",
+      prevEl: ".swiper-button-prev-new",
+    },
   });
-
-  //when I click right, move slides to right
-  nextButton.addEventListener("click", (e) => {
-    const currentSlide = track.querySelector(".current-slide");
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector(".current-slide");
-    const nextDot = currentDot.nextElementSibling;
-    const lastSlide = track.querySelector(".last-slide");
-    const firstSlide = track.querySelector(".first-slide");
-    const firstDot = dotsNav.querySelector(".first-dot");
-
-    if (currentSlide === lastSlide) {
-      moveToSlide(track, currentSlide, firstSlide);
-      updateDots(currentDot, firstDot);
-    } else {
-      moveToSlide(track, currentSlide, nextSlide);
-      updateDots(currentDot, nextDot);
-    }
-  });
-
-  //when I click the nav indicators, move to that slide
-  dotsNav.addEventListener("click", (e) => {
-    const targetDot = e.target.closest("button");
-
-    if (!targetDot) return;
-
-    const currentSlide = track.querySelector(".current-slide");
-    const currentDot = dotsNav.querySelector(".current-slide");
-    const targetIndex = dots.findIndex((dot) => dot === targetDot);
-    const targetSlide = slides[targetIndex];
-
-    moveToSlide(track, currentSlide, targetSlide);
-    updateDots(currentDot, targetDot);
-  });
-
-  let initialPosition = null;
-  let active = false;
-  let transform = 0;
-  //
-  const dragStart = (e) => {
-    initialPosition = e.pageX;
-    active = true;
-    const transformMatrix = window
-      .getComputedStyle(track)
-      .getPropertyValue("transform");
-    if (transformMatrix !== "none") {
-      transform = parseInt(transformMatrix.split(",")[4].trim());
-    }
-  };
-  //
-  const drag = (e) => {
-    if (active) {
-      const currentPosition = e.pageX;
-      const diff = currentPosition - initialPosition;
-      track.style.transform = `translateX(${transform + diff}px)`;
-    }
-  };
-
-  const dragEnd = (e) => {
-    active = false;
-  };
-
-  if (window.PointerEvent) {
-    track.addEventListener("pointerdown", dragStart);
-    track.addEventListener("pointermove", drag);
-    window.addEventListener("pointerup", dragEnd);
-  } else {
-    track.addEventListener("touchdown", dragStart);
-    track.addEventListener("touchmove", drag);
-    window.addEventListener("touchup", dragEnd);
-    track.addEventListener("mousedown", dragStart);
-    track.addEventListener("mousemove", drag);
-    window.addEventListener("mouseup", dragEnd);
-  }
-
-  //add eventlistener to track (carousel track ul) for drag events of li elements
-
-  // const currentSlide = track.querySelector(".first-slide");
-
-  // currentSlide.addEventListener("touchstart", dragStart, false);
-  // currentSlide.addEventListener("touchend", dragEnd, false);
-  // currentSlide.addEventListener("touchmove", drag, false);
-
-  // currentSlide.addEventListener("mousedown", dragStart, false);
-  // currentSlide.addEventListener("mouseup", dragEnd, false);
-  // currentSlide.addEventListener("mousemove", drag, false);
-
-  // var container = document.querySelector("#container"); // carousel track
-  // var active = false;
-  // var currentX;
-  // var currentY;
-  // var initialX;
-  // var initialY;
-  // var xOffset = 0;
-  // var yOffset = 0;
-
-  // function dragStart(e) {
-  //   console.log(e);
-  //upon drag event, add class of overflow-visible to trackContainer
-  //   trackContainer.classList.add("overflow-visible");
-  //   const currentSlide = track.querySelector(".current-slide");
-
-  //   if (e.type === "touchstart") {
-  //     initialX = e.touches[0].clientX - xOffset;
-  //     initialY = e.touches[0].clientY - yOffset;
-  //   } else {
-  //     initialX = e.clientX - xOffset;
-  //     initialY = e.clientY - yOffset;
-  //   }
-
-  //   if (e.target === currentSlide) {
-  //     active = true;
-  //   }
-  // }
-
-  // function dragEnd(e) {
-  //   console.log(e);
-  //upon dragend event, remove class of overflow-visible to trackContainer
-  //   trackContainer.classList.remove("overflow-visible");
-  //   initialX = currentX;
-  //   initialY = currentY;
-
-  //   active = false;
-  // }
-
-  // function drag(e) {
-  //   const currentSlide = track.querySelector(".current-slide");
-
-  //   if (active) {
-  //     console.log("im in drag");
-  //     e.preventDefault();
-
-  //     if (e.type === "touchmove") {
-  //       currentX = e.touches[0].clientX - initialX;
-  //       currentY = e.touches[0].clientY - initialY;
-  //     } else {
-  //       currentX = e.clientX - initialX;
-  //       currentY = e.clientY - initialY;
-  //     }
-
-  //     xOffset = currentX;
-  //     yOffset = currentY;
-
-  //     setTranslate(currentX, currentY, currentSlide);
-  //   }
-  // }
-
-  // function setTranslate(xPos, yPos, el) {
-  //   console.log("its moving?");
-  //   el.style.transform = "translateX(" + xPos + "px" + ")";
-  // }
+  console.log("past");
 })(jQuery);

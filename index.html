@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:600"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/applify.min.css" />
   </head>
   <body class="ui-transparent-nav" data-fade_in="on-load">
@@ -204,10 +206,10 @@
       <!-- .section -->
 
       <!-- Showcase Blocks Section -->
-      <!-- <div id="showcase" class="section bg-light">
-        <div class="container"> -->
+      <div id="showcase" class="section bg-light">
+        <div class="container">
           <!-- Section Heading -->
-          <!-- <div class="section-heading center">
+          <div class="section-heading center">
             <h2 class="heading text-indigo">
               Showcase Blocks
             </h2>
@@ -215,10 +217,10 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </div> -->
+          </div>
           <!-- .section-heading -->
 
-          <!-- <div class="ui-showcase-blocks">
+          <div class="ui-showcase-blocks">
             <div class="row">
               <div class="col-md-6" data-vertical_center="true">
                 <h4 class="heading">
@@ -266,9 +268,9 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         <!-- .container -->
-      <!-- </div> -->
+      </div>
       <!-- .section -->
 
       <!-- Integration Section -->
@@ -324,7 +326,7 @@
             </div>
 
             <!-- Right Column -->
-            <!-- <div class="col-xl-6 col-lg-7"> -->
+            <div class="col-xl-6 col-lg-7">
               <!-- Logo Cloud -->
               <div class="ui-logos-cloud">
                 <div data-size="4" class="mt-0 animate" data-show="fade-in">
@@ -386,7 +388,7 @@
                 </div> 
 
                 <!-- Flex Break -->
-                <!-- <span class="flex-break"></span>
+                <span class="flex-break"></span>
 
                 <div data-size="8" class="animate" data-show="fade-in">
                   <img
@@ -415,10 +417,10 @@
                     data-uhd
                     alt="Applif App Landing Page"
                   />
-                </div> -->
+                </div>
 
                 <!-- Flex Break -->
-                <!-- <!-- <span class="flex-break"></span> -->
+                <span class="flex-break"></span>
 
                 <div data-size="3" class="animate" data-show="fade-in">
                   <img
@@ -440,7 +442,7 @@
                     data-uhd
                     alt="Applif App Landing Page"
                   />
-                </div> -->
+                </div>
 
                 <!-- Flex Break -->
                  <span class="flex-break"></span>
@@ -463,7 +465,7 @@
       <!-- .section -->
 
       <!-- Big Image Section -->
-      <!-- <div class="section">
+      <div class="section">
         <div class="container">
           <div class="row">
             <div class="col-lg-6" data-vertical_center="true">
@@ -490,9 +492,9 @@
                     >Get Started</a
                   >
                 </div>
-              </div> -->
+              </div>
               <!-- .section-heading -->
-            <!-- </div>
+            </div>
             <div class="col-lg-6">
               <img
                 src="assets/img/mockups/applify-browser-mockup.png"
@@ -503,49 +505,107 @@
               />
             </div>
           </div>
-        </div> -->
+        </div>
         <!-- .container -->
-      <!-- </div> -->
+      </div>
       <!-- .section -->
+
+<!-- Swiper Carousel -->
+
+<div class="section">
+  <div class="section-heading center">
+    <h1 class="text-indigo">Trusted the World Over</h1>
+    <p class="paragraph">Delighting our customers is our top priority. Check out some testimonials from our happy users.</p>
+  </div>
+
+          <!-- Swiper -->
+          <div class="carousel"> 
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">             
+                  <div class="carousel__card shadow-xl-purple">
+                  <div class="testimonial-container">
+                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+                    <span class="customer-name">Pam Whitmore</span>
+                    <span class="customer-title">group manager, IT, Intuit</span>
+                  </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="carousel__card shadow-xl-purple">
+                    <div class="testimonial-container">
+                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+                      <span class="customer-name">Pam Whitmore</span>
+                      <span class="customer-title">group manager, IT, Intuit</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="carousel__card shadow-xl-purple">
+                    <div class="testimonial-container">
+                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+                      <span class="customer-name">Pam Whitmore</span>
+                      <span class="customer-title">group manager, IT, Intuit</span>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+                <!--arrows-->
+              <div class="swiper-button-next-new"></div>
+              <div class="swiper-button-prev-new"></div>  
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
 
       <!-- User Reviews Section -->
 
-        <div class="section container">
+        <!-- <div class="section container">
           <div class="section-heading center">
             <h1 class="text-indigo">Trusted the World Over</h1>
             <p class="paragraph">Delighting our customers is our top priority. Check out some testimonials from our happy users.</p>
-          </div>
+          </div> -->
           <!-- carousel -->
-            <div class="carousel"> 
+            <!-- <div class="carousel"> 
               <div class="carousel__track-container"> 
                 <div class= "carousel__button carousel__right"></div>
                 <div class= "carousel__button carousel__left"></div>
-                <ul class="carousel__track"> 
+                <ul class="carousel__track">  -->
               <!-- testimonial card #1 -->
-                  <li class="carousel__slide current-slide first-slide" data-slide="0"> 
+                  <!-- <li class="carousel__slide current-slide first-slide" data-slide="0"> 
                 <div class="carousel__card shadow-xl-purple">
                   <div class="testimonial-container">
-                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Slack makes it like you’re in the same room.”</span>
+                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
                     <span class="customer-name">Pam Whitmore</span>
                     <span class="customer-title">group manager, IT, Intuit</span>
                   </div>
                   </div>
-                  </li>
+                  </li> -->
                 <!-- testimonial card #2-->
-              <li class="carousel__slide" data-slide="1"> 
+              <!-- <li class="carousel__slide" data-slide="1"> 
                 <div class="carousel__card shadow-xl-purple">
                   <div class="testimonial-container">
-                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Slack makes it like you’re in the same room.”</span>
+                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
                     <span class="customer-name">Pam Whitmore</span>
                     <span class="customer-title">group manager, IT, Intuit</span>
                   </div>
                   </div>
-                  </li>
+                  </li> -->
                 <!-- testimonial card #3-->
-                <li class="carousel__slide last-slide" data-slide="2"> 
+                <!-- <li class="carousel__slide last-slide" data-slide="2"> 
                   <div class="carousel__card shadow-xl-purple">
                     <div class="testimonial-container">
-                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Slack makes it like you’re in the same room.”</span>
+                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
                       <span class="customer-name">Pam Whitmore</span>
                       <span class="customer-title">group manager, IT, Intuit</span>
                     </div>
@@ -554,13 +614,13 @@
                 </ul>
               </div>
             </div>
-            <div class="carousel__nav">
+            <div class="carousel__nav"> -->
               <!-- to add additional nav dots, add more buttons here -->
-              <button class="carousel__indicator current-slide first-dot"></button>
+              <!-- <button class="carousel__indicator current-slide first-dot"></button>
               <button class="carousel__indicator"></button>
-              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator last-dot"></button>
             </div>
-      </div>
+      </div> -->
 
       <!-- API Tabs Section -->
       <div id="code" class="section bg-light">
@@ -739,13 +799,13 @@
       <!-- .section -->
 
       <!-- Support Section -->
-      <!-- <div id="support" class="section bg-dark-gray">
+      <div id="support" class="section bg-dark-gray">
         <div class="container">
-          <div class="row"> -->
+          <div class="row">
             <!-- Text Column -->
-            <!-- <div class="col-lg-6 col-md-5" data-vertical_center="true"> -->
+            <div class="col-lg-6 col-md-5" data-vertical_center="true">
               <!-- Section Heading -->
-              <!-- <div class="section-heading mb-0 center-on-md">
+              <div class="section-heading mb-0 center-on-md">
                 <h2 class="heading">
                   Award-Winning Support
                 </h2>
@@ -785,13 +845,13 @@
                       Experts working 24/7
                     </p>
                   </div>
-                </div> -->
+                </div>
                 <!-- .row -->
-              <!-- </div> -->
+              </div>
               <!-- .section-heading -->
-            <!-- </div> -->
+            </div>
             <!-- Image Column -->
-            <!-- <div
+            <div
               class="col-lg-6 col-md-7 img-block animate"
               data-show="fade-in-left"
               data-vertical_center="true"
@@ -803,12 +863,12 @@
                 class="img-fluid"
                 data-max_width="460"
               />
-            </div> -->
-          <!-- </div> -->
+            </div>
+          </div>
           <!-- .row -->
-        <!-- </div> -->
+        </div>
         <!-- .container -->
-      <!-- </div> -->
+      </div>
       <!-- .section -->
 
       <!-- FAQ Section -->
@@ -908,7 +968,7 @@
       <!-- .section -->
 
       <!-- Client Logos Section  -->
-      <!-- <div class="section ui-clients-logos section-sm">
+      <div class="section ui-clients-logos section-sm">
         <div class="container">
           <div class="d-flex justify-content-between">
             <div>
@@ -948,9 +1008,9 @@
             </div>
           </div>
           <!- .row -->
-        <!-- </div> -->
+        </div>
         <!-- .container -->
-      <!-- </div> --> 
+      </div> 
       <!-- .ui-clients-logos  -->
 
       <!-- Footer -->
@@ -1099,6 +1159,8 @@
     <script src="assets/js/libs/slider-pro/jquery.sliderPro.min.js"></script>
     <script src="assets/js/libs/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/js/libs/prism/prism.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!--
 # Google Maps
 # Add Your Google Maps API Key Below !!
