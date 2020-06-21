@@ -17847,6 +17847,7 @@ body.coming-soon .ui-counter > div .label {
 @media (min-width: 768px) {
   .ui-pricing-table .pricing-block {
     padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 
