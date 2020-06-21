@@ -17810,9 +17810,9 @@ body.coming-soon .ui-counter > div .label {
   .ui-pricing-table{
     padding:10px;
   }
-  .pricing-sidebar{
+  /* .pricing-sidebar{
     display:none;
-  }
+  } */
 }
 @media (min-width: 768px) {
   .ui-pricing-table {
@@ -18649,15 +18649,13 @@ body.coming-soon .ui-counter > div .label {
 }
 @media screen and (min-width: 60em){
   .features {
-    margin-left: 4rem;
-    margin-right: 4rem;
     align-items: stretch;
     flex-wrap: wrap;
     flex-direction: row;
 }
 .value-prop-card-container {
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
   padding-top: 0px;
   width: 33.3333%;
 }
