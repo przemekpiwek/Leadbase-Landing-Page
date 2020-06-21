@@ -792,6 +792,7 @@
   });
 
   //  <------- Swiper Carousel Initialization ------->
+  // documentation: https://swiperjs.com/api/
 
   var swiper = new Swiper(".swiper-container", {
     speed: 400,
@@ -817,5 +818,4 @@
       prevEl: ".swiper-button-prev-new",
     },
   });
-  console.log("past");
 })(jQuery);

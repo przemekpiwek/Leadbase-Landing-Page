@@ -1,0 +1,53 @@
+<!-- User Reviews Section -->
+
+<!-- <div class="section container">
+  <div class="section-heading center">
+    <h1 class="text-indigo">Trusted the World Over</h1>
+    <p class="paragraph">Delighting our customers is our top priority. Check out some testimonials from our happy users.</p>
+  </div> -->
+  <!-- carousel -->
+    <!-- <div class="carousel"> 
+      <div class="carousel__track-container"> 
+        <div class= "carousel__button carousel__right"></div>
+        <div class= "carousel__button carousel__left"></div>
+        <ul class="carousel__track">  -->
+      <!-- testimonial card #1 -->
+          <!-- <li class="carousel__slide current-slide first-slide" data-slide="0"> 
+        <div class="carousel__card shadow-xl-purple">
+          <div class="testimonial-container">
+            <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+            <span class="customer-name">Pam Whitmore</span>
+            <span class="customer-title">group manager, IT, Intuit</span>
+          </div>
+          </div>
+          </li> -->
+        <!-- testimonial card #2-->
+      <!-- <li class="carousel__slide" data-slide="1"> 
+        <div class="carousel__card shadow-xl-purple">
+          <div class="testimonial-container">
+            <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+            <span class="customer-name">Pam Whitmore</span>
+            <span class="customer-title">group manager, IT, Intuit</span>
+          </div>
+          </div>
+          </li> -->
+        <!-- testimonial card #3-->
+        <!-- <li class="carousel__slide last-slide" data-slide="2"> 
+          <div class="carousel__card shadow-xl-purple">
+            <div class="testimonial-container">
+              <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+              <span class="customer-name">Pam Whitmore</span>
+              <span class="customer-title">group manager, IT, Intuit</span>
+            </div>
+            </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel__nav"> -->
+      <!-- to add additional nav dots, add more buttons here -->
+      <!-- <button class="carousel__indicator current-slide first-dot"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator last-dot"></button>
+    </div>
+</div> 

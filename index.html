@@ -13,8 +13,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:600"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/applify.min.css" />
   </head>
   <body class="ui-transparent-nav" data-fade_in="on-load">
@@ -49,11 +49,11 @@
             <!-- Nav Item -->
             <li>
               <!-- data scroll not necessary for home link -->
-              <a href="#" data-scrollto="features">Home</a>
+              <a href="#" data-scrollto="home">Home</a>
             </li>
             <!-- Nav Item -->
             <li>
-              <a href="#" data-scrollto="about">About</a>
+              <a href="#" data-scrollto="features">About</a>
             </li>
             <!-- Nav Item -->
             <li>
@@ -69,13 +69,15 @@
 
         <!-- Navbar Button -->
         <a
-        href="https://themeforest.net/item/applify-app-landing-page-html/20000720"
-        class="btn btn-sm ui-gradient-green pull-right"
-        ><b>Sign-up</b></a
-      >
+          href="https://themeforest.net/item/applify-app-landing-page-html/20000720"
+          class="btn btn-sm pull-right nav-btn"
+          id="sign-up-btn"
+          ><b>Sign-up</b></a
+        >
         <a
           href="https://themeforest.net/item/applify-app-landing-page-html/20000720"
-          class="btn btn-sm ui-gradient-green pull-right"
+          class="btn btn-sm pull-right nav-btn"
+          id="log-in-btn"
           >Log-in</a
         >
       </div>
@@ -92,999 +94,442 @@
         <div class="container">
           <div class="row">
             <div
-              class="col-sm-12"
+              class="col-lg-6"
               data-vertical_center="true"
               data-vertical_offset="16"
             >
-              <h1
-                class="heading animate"
-                data-show="fade-in-up-big"
-                data-delay="100"
-              >
-                New Leads At Your Fingertips
-              </h1>
-              <p class="paragraph">
-                Leadbase AI leverages neuro-linguistic programming to uncover
-                new leads across social channels in real-time
-              </p>
-              <div
-                class="actions animate"
-                data-show="fade-in-up-big"
-                data-delay="600"
-              >
-              <!-- Call to action buttons -->
-                <a
-                  href="#"
-                  class="btn ui-gradient-peach shadow-xl"
-                  data-scrollto="features"
-                  >Request a Demo</a
+              <div class="section-heading center-on-md">
+                <h1
+                  class="heading animate"
+                  data-show="fade-in-up-big"
+                  data-delay="100"
                 >
+                  New Leads <br />
+                  At Your Fingertips
+                </h1>
+                <p
+                  class="paragraph animate"
+                  data-show="fade-in-up-big"
+                  data-delay="500"
+                >
+                  Leadbase AI leverages neuro-linguistic programming to uncover
+                  new leads across social channels in real-time
+                </p>
+                <div
+                  class="actions animate"
+                  data-show="fade-in-up-big"
+                  data-delay="600"
+                >
+                  <!-- Call to action buttons -->
+                  <a
+                    href="#"
+                    class="btn shadow-xl color-red"
+                    data-scrollto="features"
+                    id="hero-btn"
+                    >Try for Free</a
+                  >
+                </div>
               </div>
+              <!-- .section-heading -->
             </div>
             <div
-              class="col-sm-12 animate"
-              data-show="fade-in-up"
-              data-delay="400"
+              class="col-lg-6 img-block animate fade-in-left"
+              data-show="fade-in-left"
+              data-delay="10000"
             >
-            <!-- change image to application picture -->
               <img
-                src="assets/img/mockups/app-page.png"
-                alt="Leadbase - Application Screenshot"
+                src="assets/img/mockups/leadbase-app-page.png"
                 data-uhd
-                data-max_width="1000"
-                class="responsive-on-lg shadow-xl-purple"
+                data-max_width="750"
+                class="shadow-xl-purple"
+                alt="Leadbase - Application Screenshot"
+                id="hero-image"
               />
             </div>
           </div>
-          <!-- .row -->
         </div>
         <!-- .container -->
       </div>
       <!-- .ui-hero -->
 
-      <!-- Additional call to action -->
-      <div class="section">
-        <div class="container">
-        <div class="section-heading center">
-            <h2 class="heading text-indigo">
-              Leadbase AI: AI-Powered Social Selling
-            </h2>
-            <p class="paragraph">
-              Leadbase AI uses proprietary neuro-linguistic programming to identify customers with a strong intent to purchase across various social media networks. Finding your next customer has never been easier.
-            </p>
-          </div>
-          <div class="mt-4 text-center">
-            <a
-            href="#"
-            class="btn ui-gradient-peach shadow-xl"
-            data-scrollto="features"
-            >Learn More</a
-          >
-          </div>
-
-
+      <!-- UI Hero Subsection-->
+      <div class="hero-subsection">
+        <div class="container tilt">
+          <div class="row">
+            <div
+              class="col-md-7 hero-container-subsection"
+              data-vertical_center="true"
+            >
+              `
+              <h2 class="heading hero-subsection-title">
+                Leadbase AI: AI-Powered Social Selling
+              </h2>
+              <p class="paragraph">
+                Leadbase AI uses proprietary neuro-linguistic programming to
+                identify customers with a strong intent to purchase across
+                various social media networks. Finding your next customer has
+                never been easier.
+              </p>
+              <div class="mt-4">
+                <a href="#" class="btn shadow-xl" data-scrollto="features"
+                  >Learn More</a
+                >
+              </div>
               <!-- Call to action buttons -->
-    </div>
-    </div>
-    </div>
-      <!-- App Features Section -->
-      <div id="features" class="section">
-        <div class="container ui-icon-blocks ui-blocks-h icons-lg">
-          <div class="row">
-            <div class="col-sm-4 ui-icon-block">
-              <div
-                class="icon icon-lg icon-circle icon-arrow ui-gradient-blue"
-              ></div>
-              <h4>Optimize Social Selling</h4>
-              <p>
-                Identify hot prospects across multiple social networks in a single dashboard
-              </p>
             </div>
-            <div class="col-sm-4 ui-icon-block">
-              <div
-                class="icon icon-lg icon-circle icon-graph ui-gradient-peach"
-              ></div>
-              <h4>Powerful Analytics</h4>
-              <p>
-                Easily identify which social networks are your best sales channels
-              </p>
-            </div>
-            <div class="col-sm-4 ui-icon-block">
-              <div
-                class="icon icon-lg icon-circle icon-gauge ui-gradient-green"
-              ></div>
-              <h4>Grow Social Sales Funnel</h4>
-              <p>
-                Engage with the right prospects and convert them into paying customers
-              </p>
-            </div>
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- .container -->
-      </div>
-      <!-- .section -->
-
-      <!-- Showcase Blocks Section -->
-      <div id="showcase" class="section bg-light">
-        <div class="container">
-          <!-- Section Heading -->
-          <div class="section-heading center">
-            <h2 class="heading text-indigo">
-              Showcase Blocks
-            </h2>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <!-- .section-heading -->
-
-          <div class="ui-showcase-blocks">
-            <div class="row">
-              <div class="col-md-6" data-vertical_center="true">
-                <h4 class="heading">
-                  Modern UI Design
-                </h4>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <a href="#" class="btn-link btn-arrow">Explore</a>
-              </div>
-              <div class="col-md-6">
-                <img
-                  class="responsive-on-xs"
-                  src="assets/img/mockups/applify-mockup-7.png"
-                  data-uhd
-                  alt="Applify - App Landing HTML Template"
-                  data-max_width="464"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6" data-vertical_center="true">
-                <h4 class="heading">
-                  Designed for Apps
-                </h4>
-                <p class="paragraph">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
-                </p>
-                <a href="#" class="btn-link btn-arrow">Explore</a>
-              </div>
-              <div class="col-md-6">
-                <img
-                  class="responsive-on-xs"
-                  src="assets/img/mockups/applify-mockup-10.png"
-                  data-uhd
-                  alt="Applify - App Landing HTML Template"
-                  data-max_width="451"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- .container -->
-      </div>
-      <!-- .section -->
-
-      <!-- Integration Section -->
-      <div id="integrate" class="section bg-indigo">
-        <div class="container">
-          <div class="row"> -->
-            <!-- Left Column -->
-            <div class="col-xl-6 col-lg-5" data-vertical_center="true">
-              <!-- Section Heading -->
-              <div class="section-heading mb-2 center-on-md">
-                <h2 class="heading">
-                  Applify Integrations
-                </h2>
-                <p class="paragraph">
-                  Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do
-                  Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Ali
-                </p>
-              </div>
-              <!-- .section-heading -->
-
-              <!-- Left blocks -->
-              <ul class="ui-icon-blocks ui-blocks-v icons-sm center-on-md">
-                <li class="ui-icon-block">
-                  <span class="icon icon-diamond"></span>
-                  <p class="">
-                    Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed
-                    Do Eiusmod Tempor Incididunt Ut Labore Et Dolore
-                  </p>
-                  <a class="btn-link btn-arrow">
-                    Learn More
-                  </a>
-                </li>
-                <li class="ui-icon-block">
-                  <span class="icon icon-pie-chart"></span>
-                  <p class="">
-                    Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit
-                  </p>
-                  <a class="btn-link btn-arrow">
-                    Learn More
-                  </a>
-                </li>
-                <li class="ui-icon-block">
-                  <span class="icon icon-layers"></span>
-                  <p class="">
-                    Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed
-                    Do Eiusmod
-                  </p>
-                  <a class="btn-link btn-arrow">
-                    Learn More
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Right Column -->
-            <div class="col-xl-6 col-lg-7">
-              <!-- Logo Cloud -->
-              <div class="ui-logos-cloud">
-                <div data-size="4" class="mt-0 animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="10" class="mt-0 animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="7" class="mt-0 animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-
-                <!-- Flex Break -->
-               <span class="flex-break"></span>
-
-                 <div data-size="4" class="animate" data-show="fade-in"> 
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="10" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="4" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="6" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="3" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div> 
-
-                <!-- Flex Break -->
-                <span class="flex-break"></span>
-
-                <div data-size="8" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="3" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="10" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="5" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-
-                <!-- Flex Break -->
-                <span class="flex-break"></span>
-
-                <div data-size="3" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="10" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-                <div data-size="7" class="animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-
-                <!-- Flex Break -->
-                 <span class="flex-break"></span>
-
-                <div data-size="4" class="mb-0 animate" data-show="fade-in">
-                  <img
-                    src="assets/img/3rd-party-logos/logo.png"
-                    data-uhd
-                    alt="Applif App Landing Page"
-                  />
-                </div>
-              </div> -->
-              <!-- .ui-logo-cloud  -->
-            </div>
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- .container -->
-      </div>
-      <!-- .section -->
-
-      <!-- Big Image Section -->
-      <div class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6" data-vertical_center="true">
-              <div class="section-heading center-on-md">
-                <h2 class="heading text-indigo">
-                  Photoshop Mockups<br />
-                  Included Free!
-                </h2>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div class="actions">
-                  <a
-                    href="page-api-docs.html"
-                    class="btn ui-gradient-peach shadow-xl"
-                    >Try It Free</a
-                  >
-                  <a
-                    href="page-api-docs.html"
-                    class="btn ui-gradient-green shadow-xl"
-                    >Get Started</a
-                  >
-                </div>
-              </div>
-              <!-- .section-heading -->
-            </div>
-            <div class="col-lg-6">
+            <div class="col-md-5 hero-container-subsection">
               <img
-                src="assets/img/mockups/applify-browser-mockup.png"
-                data-uhd
-                data-max_width="1065"
-                class="responsive-on-md shadow-xl"
-                alt="Applify - App Landing HTML Template"
+                src="assets/img/logo/applify-app-icon.png"
+                data-uhd=""
+                alt="Leadbase - App Landing HTML Template"
+                data-max_width="464"
+                style="max-width: 464px;"
               />
             </div>
           </div>
         </div>
+      </div>
+      <div class="section container">
+        <div class="section-heading center">
+          <h2 class="heading text-indigo">
+            Your Goals Are Our Specialty
+          </h2>
+          <p class="paragraph">
+            With the right tools, finding and reaching your customers has never
+            been easier.
+          </p>
+        </div>
+
+        <ul class="section features" id="features">
+          <li class="value-prop-card-container">
+            <div class="value-prop-card shadow-xl-purple">
+              <div class="value-card-picture">
+                <img
+                  src="/assets/img/value-prop/arrow-prop.svg"
+                  alt=""
+                  class="w-100 h-auto"
+                />
+              </div>
+              <div class="value-card-text">
+                <h4 class="blue-color">Optimize Social Selling</h4>
+                <p class="paragraph">
+                  Identify hot prospects across multiple social networks in a
+                  single dashboard
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="value-prop-card-container">
+            <div class="value-prop-card shadow-xl-purple">
+              <div class="value-card-picture">
+                <img
+                  src="/assets/img/value-prop/monitor-prop.svg"
+                  alt=""
+                  class="w-100 h-auto"
+                />
+              </div>
+              <div class="value-card-text">
+                <h4 class="blue-color">Powerful Analytics</h4>
+                <p class="paragraph">
+                  Easily identify which social networks are your best sales
+                  channels
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="value-prop-card-container">
+            <div class="value-prop-card shadow-xl-purple">
+              <div class="value-card-picture">
+                <img
+                  src="/assets/img/value-prop/gauge-prop.svg"
+                  alt=""
+                  class="w-100 h-auto"
+                />
+              </div>
+              <div class="value-card-text">
+                <h4 class="blue-color">Grow Sales Funnel</h4>
+                <p class="paragraph">
+                  Engage with the right prospects and convert them into paying
+                  customers
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section pricing">
+        <div class="container pricing-container">
+          <div class="section-heading center">
+            <h2 class="heading text-indigo">
+              Pricing that scales with you
+            </h2>
+            <p class="paragraph pricing-subtitle">
+              Everything you need to capture leads and turn them into customers.
+            </p>
+          </div>
+          <!-- .section-heading -->
+
+          <div class="ui-pricing-table shadow-xl-purple">
+            <div class="pricing-sidebar">
+              <div class="pricing-header"></div>
+              <ul class="pricing-items">
+                <li>Users</li>
+                <li>Lead Conversions</li>
+                <li>Social Networks</li>
+                <li>Storage</li>
+                <li>Reporting (coming soon)</li>
+                <li>Customer Support</li>
+                <li>Data Backup</li>
+                <li>Knowledge Repository</li>
+                <li>Custom URL</li>
+                <li>Single Sign-On</li>
+              </ul>
+            </div>
+            <div class="pricing-block">
+              <div class="pricing-header">
+                <h5 class="price-plan">
+                  Trial
+                </h5>
+                <div
+                  class="price-wrapper text-indigo"
+                  data-price_ann="0/mo"
+                  data-price_mo="0/mo"
+                >
+                  <span class="curency">$</span>
+                  <span class="price">0</span>
+                  <span class="price-postfix">.00/mo</span>
+                </div>
+              </div>
+              <ul class="pricing-items">
+                <li><i>Users</i>1</li>
+                <li><i>Lead Conversions</i>20</li>
+                <li><i>Social Networks</i>1</li>
+                <li><i>Storage</i>2 GB</li>
+                <li><i>Reporting (coming soon)</i> -</li>
+                <li><i>Customer Support</i> -</li>
+                <li><i>Data Backup</i> -</li>
+                <li><i>Knowledge Repository</i> -</li>
+                <li><i>Custom URL</i> -</li>
+                <li><i>Single Sign-On</i> -</li>
+              </ul>
+              <a href="page-contact.html" class="btn pricing-btns">
+                Start Free Trial
+              </a>
+            </div>
+            <div class="pricing-block ui-gray-lighter">
+              <div class="pricing-header">
+                <h5 class="price-plan">
+                  Paid
+                </h5>
+                <div
+                  class="price-wrapper text-indigo"
+                  data-price_ann="71.95/mo"
+                  data-price_mo="79.95/mo"
+                >
+                  <span class="curency">$</span>
+                  <span class="price">79</span>
+                  <span class="price-postfix">.95/mo</span>
+                </div>
+              </div>
+              <ul class="pricing-items">
+                <li><i>Users</i>&lt 25</li>
+                <li><i>Lead Conversions</i>Unlimited</li>
+                <li><i>Social Networks</i>Unlimited</li>
+                <li><i>Storage</i>25 GB</li>
+                <li><i>Reporting (coming soon)</i>Standard</li>
+                <li>
+                  <i>Customer Support</i>
+                  <span class="fa fa-check text-lime"></span>
+                </li>
+                <li>
+                  <i>Data Backup</i> <span class="fa fa-check text-lime"></span>
+                </li>
+                <li>
+                  <i>Knowledge Repository</i>
+                  <span class="fa fa-check text-lime"></span>
+                </li>
+                <li><i>Custom URL</i> -</li>
+                <li><i>Single Sign-On</i> -</li>
+              </ul>
+              <a href="page-contact.html" class="btn pricing-btns">
+                Buy Now
+              </a>
+            </div>
+            <div class="pricing-block">
+              <div class="pricing-header">
+                <h5 class="price-plan">
+                  Enterprise
+                </h5>
+                <div class="price-wrapper">
+                  <p>
+                    <a href="mailto: sales@leadbase.ai">Contact Us</a>
+                  </p>
+                </div>
+              </div>
+              <ul class="pricing-items">
+                <li><i>Users</i>Unlimited</li>
+                <li><i>Lead Conversions</i>Unlimited</li>
+                <li><i>Social Networks</i>Unlimited</li>
+                <li><i>Storage</i>10 TB</li>
+                <li><i>Reporting (coming soon)</i>Advanced</li>
+                <li><i>Customer Support</i>Priority</li>
+                <li>
+                  <i>Data Backup</i> <span class="fa fa-check text-lime"></span>
+                </li>
+                <li>
+                  <i>Knowledge Repository</i>
+                  <span class="fa fa-check text-lime"></span>
+                </li>
+                <li>
+                  <i>Custom URL</i> <span class="fa fa-check text-lime"></span>
+                </li>
+                <li>
+                  <i>Single Sign-On</i>
+                  <span class="fa fa-check text-lime"></span>
+                </li>
+              </ul>
+              <a href="page-contact.html" class="btn pricing-btns">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
         <!-- .container -->
       </div>
       <!-- .section -->
 
-<!-- Swiper Carousel -->
-
-<div class="section">
-  <div class="section-heading center">
-    <h1 class="text-indigo">Trusted the World Over</h1>
-    <p class="paragraph">Delighting our customers is our top priority. Check out some testimonials from our happy users.</p>
-  </div>
+      <!-- Swiper Carousel -->
+      <div class="section bg-light">
+        <div class="container-responsive-swiper">
+          <div class="section-heading center">
+            <h1 class="text-indigo">Trusted the World Over</h1>
+            <p class="paragraph">
+              Delighting our customers is our top priority. Check out some
+              testimonials from our happy users.
+            </p>
+          </div>
 
           <!-- Swiper -->
-          <div class="carousel"> 
+          <div class="carousel">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">             
-                  <div class="carousel__card shadow-xl-purple">
-                  <div class="testimonial-container">
-                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
-                    <span class="customer-name">Pam Whitmore</span>
-                    <span class="customer-title">group manager, IT, Intuit</span>
-                  </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide bg-light">
                   <div class="carousel__card shadow-xl-purple">
                     <div class="testimonial-container">
-                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+                      <span class="customer-quote"
+                        >“Our teams tell us they’re working together and solving
+                        problems much faster, because although they are spread
+                        across the globe, Leadbase makes it like you’re in the
+                        same room.”</span
+                      >
                       <span class="customer-name">Pam Whitmore</span>
-                      <span class="customer-title">group manager, IT, Intuit</span>
+                      <span class="customer-title"
+                        >group manager, IT, Intuit</span
+                      >
                     </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide bg-light">
                   <div class="carousel__card shadow-xl-purple">
                     <div class="testimonial-container">
-                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
+                      <span class="customer-quote"
+                        >“Our teams tell us they’re working together and solving
+                        problems much faster, because although they are spread
+                        across the globe, Leadbase makes it like you’re in the
+                        same room.”</span
+                      >
                       <span class="customer-name">Pam Whitmore</span>
-                      <span class="customer-title">group manager, IT, Intuit</span>
+                      <span class="customer-title"
+                        >group manager, IT, Intuit</span
+                      >
                     </div>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-light">
+                  <div class="carousel__card shadow-xl-purple">
+                    <div class="testimonial-container">
+                      <span class="customer-quote"
+                        >“Our teams tell us they’re working together and solving
+                        problems much faster, because although they are spread
+                        across the globe, Leadbase makes it like you’re in the
+                        same room.”</span
+                      >
+                      <span class="customer-name">Pam Whitmore</span>
+                      <span class="customer-title"
+                        >group manager, IT, Intuit</span
+                      >
                     </div>
+                  </div>
                 </div>
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
             </div>
-                <!--arrows-->
-              <div class="swiper-button-next-new"></div>
-              <div class="swiper-button-prev-new"></div>  
+            <!--arrows-->
+            <div class="swiper-button-next-new"></div>
+            <div class="swiper-button-prev-new"></div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-      <!-- User Reviews Section -->
-
-        <!-- <div class="section container">
-          <div class="section-heading center">
-            <h1 class="text-indigo">Trusted the World Over</h1>
-            <p class="paragraph">Delighting our customers is our top priority. Check out some testimonials from our happy users.</p>
-          </div> -->
-          <!-- carousel -->
-            <!-- <div class="carousel"> 
-              <div class="carousel__track-container"> 
-                <div class= "carousel__button carousel__right"></div>
-                <div class= "carousel__button carousel__left"></div>
-                <ul class="carousel__track">  -->
-              <!-- testimonial card #1 -->
-                  <!-- <li class="carousel__slide current-slide first-slide" data-slide="0"> 
-                <div class="carousel__card shadow-xl-purple">
-                  <div class="testimonial-container">
-                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
-                    <span class="customer-name">Pam Whitmore</span>
-                    <span class="customer-title">group manager, IT, Intuit</span>
-                  </div>
-                  </div>
-                  </li> -->
-                <!-- testimonial card #2-->
-              <!-- <li class="carousel__slide" data-slide="1"> 
-                <div class="carousel__card shadow-xl-purple">
-                  <div class="testimonial-container">
-                    <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
-                    <span class="customer-name">Pam Whitmore</span>
-                    <span class="customer-title">group manager, IT, Intuit</span>
-                  </div>
-                  </div>
-                  </li> -->
-                <!-- testimonial card #3-->
-                <!-- <li class="carousel__slide last-slide" data-slide="2"> 
-                  <div class="carousel__card shadow-xl-purple">
-                    <div class="testimonial-container">
-                      <span class="customer-quote">“Our teams tell us they’re working together and solving problems much faster, because although they are spread across the globe, Leadbase makes it like you’re in the same room.”</span>
-                      <span class="customer-name">Pam Whitmore</span>
-                      <span class="customer-title">group manager, IT, Intuit</span>
-                    </div>
-                    </div>
-                    </li>
-                </ul>
-              </div>
-            </div>
-            <div class="carousel__nav"> -->
-              <!-- to add additional nav dots, add more buttons here -->
-              <!-- <button class="carousel__indicator current-slide first-dot"></button>
-              <button class="carousel__indicator"></button>
-              <button class="carousel__indicator last-dot"></button>
-            </div>
-      </div> -->
-
-      <!-- API Tabs Section -->
-      <div id="code" class="section bg-light">
-        <div class="container">
-          <div class="section-heading center">
-            <h2 class="heading text-indigo">
-              API Demonstration
-            </h2>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <!-- .section-heading -->
-
-          <!-- API Tabs -->
-          <div class="ui-api-demo">
-            <div class="ui-tabs ui-lime row">
-              <div class="col-md-3 col-lg-2">
-                <!-- Nav Tabs -->
-                <ul class="nav nav-tabs nav-vertical" role="tablist">
-                  <!-- Nav Tab 1 -->
-                  <li role="presentation" class="nav-item">
-                    <a
-                      class="nav-link active"
-                      href="#js"
-                      role="tab"
-                      data-toggle="tab"
-                      data-toggle_screen="1"
-                      data-toggle_slider="device-slider-2"
-                      aria-expanded="false"
-                    >
-                      Javascript
-                    </a>
-                  </li>
-                  <!-- Nav Tab 2 -->
-                  <li role="presentation" class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#swift"
-                      role="tab"
-                      data-toggle="tab"
-                      data-toggle_screen="2"
-                      data-toggle_slider="device-slider-2"
-                      aria-expanded="false"
-                    >
-                      Swift
-                    </a>
-                  </li>
-                  <!-- Nav Tab 3 -->
-                  <li role="presentation" class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#java"
-                      role="tab"
-                      data-toggle="tab"
-                      data-toggle_screen="3"
-                      data-toggle_slider="device-slider-2"
-                      aria-expanded="false"
-                    >
-                      Java
-                    </a>
-                  </li>
-                  <!-- Nav Tab 4 -->
-                  <li role="presentation" class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#obj-c"
-                      role="tab"
-                      data-toggle="tab"
-                      data-toggle_screen="4"
-                      data-toggle_slider="device-slider-2"
-                      aria-expanded="true"
-                    >
-                      Objective C
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Tab Panels -->
-              <div class="tab-content col-md-9 col-lg-10">
-                <!-- Tab 1 -->
-                <div role="tabpanel" class="tab-pane fade active show" id="js">
-                  <div class="ui-card shadow-xl">
-                    <pre class="language-javascript line-numbers">
-                                  <code class="language-javascript">
-                                      // Private key
-                                      var privateKey = get('87E#R{VxxbWva%2D?-sm=$DmW#{7y@E');
-
-                                      // Create a payment
-                                      var payment = charge({
-                                        key: privateKey,
-                                        amount: 599,
-                                        currency: 'usd',
-                                        source: 'visa',
-                                        description: 'My first payment'
-                                      });
-                                  </code>
-                              </pre>
-                  </div>
-                </div>
-                <!-- Tab 2 -->
-                <div role="tabpanel" class="tab-pane fade" id="swift">
-                  <div class="ui-card shadow-xl">
-                    <pre class="language-swift line-numbers">
-                                  <code class="language-swift">
-                                        //  Authorize Payment
-                                        @IBAction func authorizePayment(_ sender: AnyObject) {
-                                          let paymentViewController = paymentViewController(configuration: paymentConfig, delegate: self)
-                                          present(paymentViewController!, animated: true, completion: nil)
-                                        }
-
-                                        // Cancel Payment
-                                        func paymentDidCancel(_ paymentViewController: PaymentViewController) {
-                                          print("Payment Cancelled")
-                                          resultText = ""
-                                          successView.isHidden = true
-                                          paymentViewController.dismiss(animated: true, completion: nil)
-                                        }
-                                  </code>
-                              </pre>
-                  </div>
-                </div>
-                <!-- Tab 3 -->
-                <div role="tabpanel" class="tab-pane fade" id="java">
-                  <div class="ui-card shadow-xl">
-                    <pre class="language-java line-numbers">
-                                  <code class="language-java">
-                                        // Private key
-                                        PaymentsApi.PRIVATE_KEY = "87E#R{VxxbWva%2D?-sm=$DmW#{7y@E";
-                                        
-                                        // Create a payment
-                                        Payment payment = Payment.create(new PaymentsMap()
-                                          .set("currency", "USD")
-                                          .set("token", "f21da65e-f0ab-45cb-b8e6-40b493c3671f")
-                                          .set("amount", 599)
-                                          .set("description", "My first payment")
-                                        );
-                                  </code>
-                              </pre>
-                  </div>
-                </div>
-                <!-- Tab 4 -->
-                <div role="tabpanel" class="tab-pane fade" id="obj-c">
-                  <div class="ui-card shadow-xl">
-                    <pre class="language-objectivec line-numbers">
-                                  <code class="language-objectivec">
-                                      // Open Payment Screen
-                                      - (IBAction)btnStripeTapped:(id)sender{
-                                          PaymentViewController *paymentViewController = [[PaymentViewController alloc] initWithNibName:nil bundle:nil];
-                                          paymentViewController.amount = [NSDecimalNumber decimalNumberWithString:@"1.50"];
-                                          paymentViewController.delegate = self;
-
-                                          UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:paymentViewController]; 
-                                          [self presentViewController:navController animated:YES completion:nil];
-                                      }
-                                  </code>
-                              </pre>
-                  </div>
-                </div>
-              </div>
-              <!-- .tab-content -->
-            </div>
-          </div>
-          <!-- .ui-api-demo -->
-
-          <div class="mt-4 text-center">
-            <a class="btn shadow-lg ui-gradient-peach" href="page-api-docs.html"
-              >View API Docs</a
-            >
-          </div>
-        </div>
-        <!-- .container -->
       </div>
-      <!-- .section -->
-
-      <!-- Support Section -->
-      <div id="support" class="section bg-dark-gray">
-        <div class="container">
-          <div class="row">
-            <!-- Text Column -->
-            <div class="col-lg-6 col-md-5" data-vertical_center="true">
-              <!-- Section Heading -->
-              <div class="section-heading mb-0 center-on-md">
-                <h2 class="heading">
-                  Award-Winning Support
-                </h2>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis
-                </p>
-                <div class="row ui-icon-blocks ui-blocks-h icons-md mt-2">
-                  <div
-                    class="col-4 ui-icon-block animate text-left mb-0 center-on-md"
-                    data-show="fade-in-up"
-                  >
-                    <div class="icon icon-phone"></div>
-                    <h4 class="heading mb-1">200k</h4>
-                    <p>
-                      Calls a day
-                    </p>
-                  </div>
-                  <div
-                    class="col-4 ui-icon-block animate text-left mb-0 center-on-md"
-                    data-show="fade-in-up"
-                  >
-                    <div class="icon icon-trophy"></div>
-                    <h4 class="heading mb-1">4.5</h4>
-                    <p>
-                      Star Rating
-                    </p>
-                  </div>
-                  <div
-                    class="col-4 ui-icon-block animate text-left mb-0 center-on-md"
-                    data-show="fade-in-up"
-                  >
-                    <div class="icon icon-support"></div>
-                    <h4 class="heading mb-1">500k</h4>
-                    <p>
-                      Experts working 24/7
-                    </p>
-                  </div>
-                </div>
-                <!-- .row -->
-              </div>
-              <!-- .section-heading -->
-            </div>
-            <!-- Image Column -->
-            <div
-              class="col-lg-6 col-md-7 img-block animate"
-              data-show="fade-in-left"
-              data-vertical_center="true"
-            >
-              <img
-                src="assets/img/support/applify-support.png"
-                alt="Applify - App Landing HTML Template"
-                data-uhd
-                class="img-fluid"
-                data-max_width="460"
-              />
-            </div>
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- .container -->
-      </div>
-      <!-- .section -->
-
-      <!-- FAQ Section -->
-      <div class="section bg-light">
-        <div class="container">
-          <div class="section-heading center">
-            <h2 class="heading text-indigo">
-              Frequently Asked
-            </h2>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis
-            </p>
-          </div>
-          <!-- .section-heading -->
-          <div class="row">
-            <div class="col-md-6" data-vertical_center="true">
-              <!-- Accordion -->
-              <div class="ui-accordion-panel ui-indigo">
-                <!-- Accordion 1  -->
-                <div class="ui-card shadow-sm ui-accordion">
-                  <h6 class="toggle" data-toggle="accordion-one">
-                    1. Lorem Ipsum Dolor Sit?
-                  </h6>
-                  <div class="body in" data-accord="accordion-one">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      <a href="#" target="_blank">Learn more.</a>
-                    </p>
-                  </div>
-                </div>
-                <!-- Accordion 2  -->
-                <div class="ui-card shadow-sm ui-accordion">
-                  <h6 class="toggle" data-toggle="accordion-two">
-                    2. Amet Consectetur Adipisicing?
-                  </h6>
-                  <div class="body" data-accord="accordion-two">
-                    <p>
-                      Donec elementum ligula eu sapien consequat eleifend. Donec
-                      nec dolor erat, condimentum sagittis sem. Praesent
-                      porttitor porttitor risus, dapibus rutrum ipsum gravida
-                      et. Integer lectus nisi, facilisis sit amet eleifend nec.
-                      <a href="#" target="_blank">Learn more.</a>
-                    </p>
-                  </div>
-                </div>
-                <!-- Accordion 3  -->
-                <div class="ui-card shadow-sm ui-accordion">
-                  <h6 class="toggle" data-toggle="accordion-three">
-                    3. Elit Sed Do Eiusmo?
-                  </h6>
-                  <div class="body" data-accord="accordion-three">
-                    <p>
-                      Aliquam erat volutpat. Maecenas scelerisque, orci sit amet
-                      cursus tincidunt, libero nisl eleifend tortor, vitae
-                      cursus risus mauris vitae nisi. Cras laoreet ultrices
-                      ligula eget tempus.
-                      <a href="#" target="_blank">Learn more.</a>
-                    </p>
-                  </div>
-                </div>
-                <!-- Accordion 4  -->
-                <div class="ui-card shadow-sm ui-accordion">
-                  <h6 class="toggle" data-toggle="accordion-four">
-                    4. Ea Commodo Consequat?
-                  </h6>
-                  <div class="body" data-accord="accordion-four">
-                    <p>
-                      In hac habitasse platea dictumst. Pellentesque ornare
-                      blandit orci, eget tristique risus convallis ut. Vivamus a
-                      sapien neque. Morbi malesuada massa ac sapien luctus
-                      vulputate. <a href="#" target="_blank">Learn more.</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Accordion -->
-            </div>
-            <div class="col-md-6">
-              <img
-                src="assets/img/mockups/applify-mockup-4.png"
-                data-uhd
-                alt="Applify - App Landing Page HTML Template"
-                class="responsive-on-sm"
-                data-max_width="500"
-              />
-            </div>
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- .container -->
-      </div>
-      <!-- .section -->
-
-      <!-- Client Logos Section  -->
-      <div class="section ui-clients-logos section-sm">
-        <div class="container">
-          <div class="d-flex justify-content-between">
-            <div>
-              <img
-                src="assets/img/clients-logos/logo.png"
-                alt="Applify - App Landing HTML Template"
-                data-uhd
-              />
-            </div>
-            <div>
-              <img
-                src="assets/img/clients-logos/logo.png"
-                alt="Applify - App Landing HTML Template"
-                data-uhd
-              />
-            </div>
-            <div>
-              <img
-                src="assets/img/clients-logos/logo.png"
-                alt="Applify - App Landing HTML Template"
-                data-uhd
-              />
-            </div>
-            <div>
-              <img
-                src="assets/img/clients-logos/logo.png"
-                alt="Applify - App Landing HTML Template"
-                data-uhd
-              />
-            </div>
-            <div>
-              <img
-                src="assets/img/clients-logos/logo.png"
-                alt="Applify - App Landing HTML Template"
-                data-uhd
-              />
-            </div>
-          </div>
-          <!- .row -->
-        </div>
-        <!-- .container -->
-      </div> 
-      <!-- .ui-clients-logos  -->
 
       <!-- Footer -->
       <footer class="ui-footer bg-indigo">
         <div class="container pt-4 pb-4">
           <div class="row">
-            <div class="col-md-4 col-sm-6 footer-about footer-col center-on-sm">
+            <div class="col-md-6 col-sm-8 footer-about footer-col center-on-sm">
               <img
                 src="assets/img/logo/leadbase-logo-white.png"
                 data-uhd
                 alt="LeadBase Logo"
               />
-              <!-- <p class="mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Donec elementum ligula eu sapien consequat eleifend.
-              </p> -->
             </div>
-            <div class="col-md-3 col-6 footer-col">
-              <h6 class="heading footer-heading">Social</h6>
-              <div>
-                <a class="btn ui-gradient-blue btn-circle shadow-md">
-                  <span class="fa fa-facebook"></span>
-                </a>
-                <a class="btn ui-gradient-peach btn-circle shadow-md">
-                  <span class="fa fa-instagram"></span>
-                </a>
-                <a class="btn ui-gradient-green btn-circle shadow-md">
-                  <span class="fa fa-twitter"></span>
-                </a>
-                <a class="btn ui-gradient-purple btn-circle shadow-md">
-                  <span class="fa fa-pinterest"></span>
-                </a>
+            <div class="col-md-3 col-5 footer-container">
+              <div class="footer-col">
+                <h6 class="heading footer-heading">Connect With Us</h6>
+                <div class="social-icons">
+                  <a>
+                    <span class="fa fa-facebook"></span>
+                  </a>
+                  <a>
+                    <span class="fa fa-medium"></span>
+                  </a>
+                  <a>
+                    <span class="fa fa-twitter"></span>
+                  </a>
+                  <a>
+                    <span class="fa fa-linkedin"></span>
+                  </a>
+                  <a>
+                    <span class="fa fa-youtube"></span>
+                  </a>
+                </div>
               </div>
-              <!-- <ul class="footer-nav">
-                <li>
-                  <a href="demo-mobile-app-1.html">Mobile App 1</a>
-                </li>
-                <li>
-                  <a href="demo-mobile-app-2.html">Mobile App 2</a>
-                </li>
-                <li>
-                  <a href="demo-saas.html">Mobile Saas</a>
-                </li>
-                <li>
-                  <a href="demo-web-app.html">Web App</a>
-                </li>
-                <li>
-                  <a href="index.html#demos">More Demos</a>
-                </li>
-              </ul> -->
             </div>
-            <div class="col-md-3 col-6 footer-col">
-              <h6 class="heading footer-heading">Legal</h6>
-              <ul class="footer-nav">
-                <li>
-                  <a href="page-api-docs.html">Contact us</a>
-                </li>
-                <li>
-                  <a href="page-pricing.html">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="page-contact.html">Terms and Conditions</a>
-                </li>
-              </ul>
+            <div class="col-md-3 col-5 footer-container">
+              <div class="footer-col">
+                <h6 class="heading footer-heading">Legal</h6>
+                <ul class="footer-nav">
+                  <li>
+                    <a href="page-api-docs.html"><b>Contact us</b></a>
+                  </li>
+                  <li>
+                    <a href="page-pricing.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="page-contact.html">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- <div class="col-md-4 col-sm-6 footer-col center-on-sm">
               <h6 class="heading footer-heading">Newsletter</h6> -->
-              <!-- Form -->
-              <!-- <form autocomplete="on" id="sign-up-form" name="sign-up-form">
+            <!-- Form -->
+            <!-- <form autocomplete="on" id="sign-up-form" name="sign-up-form">
                 <div class="form-group">
                   <div class="input-group"> -->
-                    <!-- Email Input -->
-                    <!-- <input
+            <!-- Email Input -->
+            <!-- <input
                       autocomplete="email"
                       class="input form-control"
                       data-validation="required"
@@ -1093,8 +538,8 @@
                       placeholder="Email"
                     />
                     <div class="input-group-append"> -->
-                      <!-- Submit Button -->
-                      <!-- <button class="btn ui-gradient-peach">
+            <!-- Submit Button -->
+            <!-- <button class="btn ui-gradient-peach">
                         Subscribe <span class="fa fa-send"></span>
                       </button>
                     </div>
@@ -1111,8 +556,8 @@
         <!-- <div class="footer-copyright bg-gray">
           <div class="container">
             <div class="row"> -->
-              <!-- Copyright -->
-              <!-- <div class="col-sm-6 center-on-sm">
+        <!-- Copyright -->
+        <!-- <div class="col-sm-6 center-on-sm">
                 <p>
                   &copy; 2017
                   <a
@@ -1123,8 +568,8 @@
                   >
                 </p>
               </div> -->
-              <!-- Social Icons -->
-              <!-- <div class="col-sm-6 text-right">
+        <!-- Social Icons -->
+        <!-- <div class="col-sm-6 text-right">
                 <ul class="footer-nav">
                   <li>
                     <a href="#">
@@ -1145,7 +590,7 @@
               </div>
             </div>
           </div> -->
-          <!-- .container -->
+        <!-- .container -->
         <!-- </div> -->
         <!-- .footer-copyright -->
       </footer>
@@ -1160,7 +605,7 @@
     <script src="assets/js/libs/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/js/libs/prism/prism.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!--
 # Google Maps
 # Add Your Google Maps API Key Below !!
@@ -1170,6 +615,5 @@
     <script src="assets/js/libs/form-validator/form-validator.min.js"></script>
     <script src="assets/js/libs/bootstrap.js"></script>
     <script src="assets/js/applify/build/applify.js"></script>
-
   </body>
 </html>
