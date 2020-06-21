@@ -15455,6 +15455,13 @@ body.modal-open {
   z-index: 9;
 }
 
+.sign-up-nav{
+  display:block;
+}
+.log-in-nav{
+  display:block;
+}
+
 @media (max-width: 481px) {
   .navbar {
     min-height: 50px;
@@ -15589,10 +15596,17 @@ color:white;
 background: linear-gradient(45deg, rgba(30, 29, 92, 0.9), rgba(69, 72, 224, 0.9) );
 border:0px;
 }
+#sign-up-btn{
+  display:none
+}
+#log-in-btn{
+  display:none
+}
 
 #sign-up-btn:hover, #log-in-btn:hover, .pricing-btns:hover{
   background: linear-gradient(45deg, rgb(30, 29, 92), rgb(69, 72, 224) );
   color: white !important;
+  display:none
 }
 
 .nav-btn:hover{
@@ -15632,6 +15646,18 @@ border:0px;
 @media (min-width: 992px) {
   .navbar .ui-navigation {
     height: 60px;
+  }
+  .sign-up-nav{
+    display:none;
+  }
+  .log-in-nav{
+    display:none;
+  }
+  #sign-up-btn{
+    display:block;
+  }
+  #log-in-btn{
+    display:block;
   }
 }
 
