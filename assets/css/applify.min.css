@@ -15606,7 +15606,6 @@ border:0px;
 #sign-up-btn:hover, #log-in-btn:hover, .pricing-btns:hover{
   background: linear-gradient(45deg, rgb(30, 29, 92), rgb(69, 72, 224) );
   color: white !important;
-  display:none
 }
 
 .nav-btn:hover{
