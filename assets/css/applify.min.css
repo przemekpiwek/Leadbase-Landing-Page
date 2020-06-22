@@ -7558,10 +7558,16 @@ a.text-dark:focus, a.text-dark:hover {
 .fa-twitter:before {
   content: "";
 }
+.fa-twitter:hover{
+  color: #4547E0;
+}
 
 .fa-facebook-f:before,
 .fa-facebook:before {
   content: "";
+}
+.fa-facebook:hover{
+  color:#4547E0;
 }
 
 .fa-github:before {
@@ -7789,6 +7795,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 .fa-linkedin:before {
   content: "";
+}
+.fa-linkedin:hover{
+  color: #4547E0;
 }
 
 .fa-rotate-left:before,
@@ -8309,6 +8318,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 .fa-youtube:before {
   content: "";
+}
+.fa-youtube:hover{
+  color: #4547E0;
 }
 
 .fa-xing:before {
@@ -9123,6 +9135,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 .fa-medium:before {
   content: "";
+}
+.fa-medium:hover{
+  color: #4547E0;
 }
 
 .fa-yc:before,
@@ -14339,11 +14354,7 @@ body[data-fade_in="on-load"],
 .social-icons{
   display: flex;
   justify-content: space-around;
-}
-.social-icons>a>span{
-  display: block;
-  height:50px;
-  width: 50px;
+  flex-wrap:wrap;
 }
 .social-icons>a>span:hover{
   cursor:pointer;
@@ -14371,6 +14382,9 @@ body[data-fade_in="on-load"],
   justify-content: flex-end;
   align-items: center;
   height: 40px;
+}
+.footer-nav>li>a:hover{
+  color:#4547E0;
 }
 
 @media (max-width: 739px) {
@@ -14433,8 +14447,23 @@ body[data-fade_in="on-load"],
 
 .ui-footer .footer-about img {
   display:block;
-  width:20vw;
+  max-width:50vw;
   margin-bottom: .15rem;
+  position:relative;
+  margin: 10px auto 30px auto;
+}
+.footer-logo{
+  display:flex;
+  justify-content:center;
+}
+@media (min-width:768px){
+  .footer-logo img{
+    max-width: 25vw !important;
+    margin: 0 !important;
+  }
+  .footer-logo{
+    justify-content:flex-start;
+  }
 }
 
 .ui-footer .footer-about p {
@@ -15850,6 +15879,9 @@ border:0px;
 .transparent .ui-mobile-nav-toggle > div > span, .navbar-dark .ui-mobile-nav-toggle > div > span {
   background-color: #FFF;
 }
+/* .transparent .ui-mobile-nav-toggle > div:hover, .navbar-dark .ui-mobile-nav-toggle > div:hover {
+  background-color: #4547E0;
+} */
 
 /**
 * 25. Sections
@@ -18558,7 +18590,7 @@ body.coming-soon .ui-counter > div .label {
   position:relative;
   height: 100px;
   width: 200vw;
-  top: -670px;
+  top: -730px;
   left: 60%;
   z-index: 2;
 }
@@ -18578,10 +18610,14 @@ body.coming-soon .ui-counter > div .label {
   color: rgb(217,215,229);
   text-align: left;
 }
-
+@media screen and (min-width: 300px){
+.hero-subsection::after{
+  top:-675px;
+}
+}
 @media screen and (min-width: 500px){
   .hero-subsection::after{
-    top: -590px;
+    top: -605px;
     left: 60%;
   }
 }
