@@ -9,6 +9,6 @@
     "live-server": "^1.2.1"
   },
   "dependencies": {
-    "swiper": "^5.4.3"
+    "swiper": "^6.0.4"
   }
 }
