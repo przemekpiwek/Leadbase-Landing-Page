@@ -18617,7 +18617,7 @@ body.coming-soon .ui-counter > div .label {
 }
 @media screen and (min-width: 500px){
   .hero-subsection::after{
-    top: -605px;
+    top: -670px;
     left: 60%;
   }
 }
